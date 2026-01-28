@@ -1,12 +1,12 @@
-/* Reset */
+
 * {
-    margin: 0;
+    margin: 0%;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
-/* Navigation */
+
 header {
     background: #111;
     padding: 1rem 2rem;
@@ -19,7 +19,7 @@ header {
 }
 
 .logo {
-    color: #fff;
+    color: #fc66cf;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -27,32 +27,101 @@ header {
 .nav-links {
     list-style: none;
     display: flex;
+   
 }
 
 .nav-links li {
     margin-left: 1.5rem;
 }
-
-.nav-links a {
-    color: #fff;
+.liv{
+     background: #fff;
+    color: #2196f3;
+    padding: 0.8rem 2rem;
     text-decoration: none;
-    font-size: 1rem;
+    border-radius: 25px;
+    font-weight: bold;
 }
+.liv:hover {
+    background:rgb(9, 231, 94);
+    padding: 10px;
+    animation: infinite;
+    transform: rotate(360deg);
 
-.nav-links a:hover {
-    color: #00bcd4;
 }
+.k1{
+    background: #fff;
+    color: #2196f3;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: #000305;
 
+}
+.k1:hover{
+     background: rgb(9, 231, 94);
+    padding: 10px;
+    animation: infinite;
+    transform: rotateX(360deg);
+
+}
+.k2{
+    background: #fff;
+    color: #2196f3;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold; 
+}
+.k2:hover{
+    background: rgb(9, 231, 94);
+    padding: 10px;
+    animation: infinite;
+    transform: rotate(360deg);
+}
+.k3{
+    background: #fff;
+    color: #2196f3;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold; 
+}
+.k3:hover{
+    background: rgb(9, 231, 94);
+    padding: 10px;
+    animation: infinite;
+    transform: rotate(360deg);
+}
 .livin1 {
     height: 90vh;
-    background: linear-gradient(to right, #00bcd4, #2196f3);
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     text-align: center;
+    
 }
-
+.livin1{
+    background-image: url(Iinstagram-Feature-1.jpg);
+    background-repeat: no-repeat; 
+    height: 100vh;
+    width: 100%;
+    background-size: cover; 
+}
+.livin1 h1,p{
+    margin-top: 50px;
+    color: #111;
+    animation: slideIn 0.5s ease-in-out;    
+}
+@keyframes slideIn {
+    from{
+        transform: translateX(-300px);     
+    }
+    to{
+        transform:translateX(0%)
+    }
+}
 .livin1 h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -70,13 +139,17 @@ header {
     text-decoration: none;
     border-radius: 25px;
     font-weight: bold;
+    
 }
 
 .btn:hover {
-    background: #f1f1f1;
+    background: black;
+    padding: 10px;
+    animation: infinite;
+    transform: rotate(360deg);
+
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -84,5 +157,48 @@ header {
 
     .livin1 h1 {
         font-size: 2.2rem;
+    }
+}
+@media (min-width: 1024px) {
+    .hero h2 {
+        font-size: 48px;
+    }
+
+    .btn {
+        padding: 15px 30px;
+    }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .btn {
+        padding: 12px 25px;
+    }
+}
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+
+    .btn {
+        width: 90%;
+        font-size: 14px;
     }
 }
